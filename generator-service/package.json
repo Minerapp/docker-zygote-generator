@@ -1,5 +1,5 @@
 {
-  "name": "ip-service",
+  "name": "docker-zygote-generator-service",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,9 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "dockerode": "^2.2.6",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "handlebars": "^4.0.5",
     "ip": "^1.1.0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "request": "^2.67.0",
+    "tap": "^2.3.1"
+  }
 }

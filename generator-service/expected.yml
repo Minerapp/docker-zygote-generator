@@ -1,0 +1,19 @@
+search:
+  image: minerapp/docker-zygote
+  environment:
+    - NODE_ENV=dev
+    - REPO=search
+    - BRANCH=dev
+    - REGURL=localhost
+  command: /bin/sh run_env.sh
+  ports:
+    - "5000"
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+  labels:
+    - "com.registry.name=dev-search"
+    - "com.randomkey.random=1031"
+  links:
+    - redis
+ redis:
+   image: redis
