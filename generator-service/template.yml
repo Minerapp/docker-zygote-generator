@@ -1,5 +1,5 @@
 {{SERVICE}}:
-  image: minerapp/docker-zygote
+  image: minerapp/docker-zygote{{TAG}}
   environment:
     - NODE_ENV={{ENV}}
     - REPO={{REPO}}
