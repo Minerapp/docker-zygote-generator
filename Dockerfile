@@ -1,3 +1,3 @@
 FROM minerapp/docker-base
-ADD ./ip-service ./
-
+ADD ./generator-service ./
+CMD ./run.sh
